@@ -4,7 +4,7 @@ Plugin Name: Free Kareem
 Plugin URI: http://semperfiwebdesign.com/plugins/free-kareem/
 Description: Help support free speech.  Fight the inprisonment of jailed blogger!
 Author: Michael Torbert
-Version: .4.4
+Version: .4.5
 Author URI: http://semperfiwebdesign.com/
 */
 
