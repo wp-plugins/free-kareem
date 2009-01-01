@@ -4,7 +4,7 @@ Plugin Name: Free Kareem
 Plugin URI: http://semperfiwebdesign.com/plugins/free-kareem/
 Description: Help support free speech.  Fight the inprisonment of jailed blogger!
 Author: Michael Torbert
-Version: .4.9
+Version: .5
 Author URI: http://semperfiwebdesign.com/
 */
 
@@ -52,6 +52,17 @@ Find out more information by visiting <a href="http://freekareem.org" title="Kar
 <br />
 <br />
 
+<a href="http://www.facebook.com/group.php?sid=ad4141412fa7b83f39672b4359fb5531&refurl=http%3A%2F%2Fwww.facebook.com%2Fs.php%3Finit%3Dq%26q%3Dfreekareem.org%26ref%3Dts%26sid%3Dad4141412fa7b83f39672b4359fb5531&gid=10271643891" title="Free Kareem Facebook"><img src="<?php echo $img_path ?>facebook.png" /></a>
+
+
+<a href="http://www.myspace.com/abdelkareem" title="Free Kareem MySpace"><img src="<?php echo $img_path; ?>myspace.png" /></a>
+
+
+<a href="http://www.youtube.com/profile_favorites?user=freekareem" title="Free Kareem Youtube"><img src="<?php echo $img_path; ?>youtube.png" /></a>
+
+<a href="http://twitter.com/freekareem" title="Free Kareem Twitter"><img src="<?php echo $img_path; ?>twitter.png" /></a>
+<br />
+<br />
 <?
 $start = "November 4, 2006";
 $now = strtotime ("now");
@@ -71,17 +82,6 @@ Kareem has been in prison for: &nbsp;
 <? echo $days ?> days.
 </p>
 
-
-<a href="http://www.facebook.com/group.php?sid=ad4141412fa7b83f39672b4359fb5531&refurl=http%3A%2F%2Fwww.facebook.com%2Fs.php%3Finit%3Dq%26q%3Dfreekareem.org%26ref%3Dts%26sid%3Dad4141412fa7b83f39672b4359fb5531&gid=10271643891" title="Free Kareem Facebook"><img src="<?php echo $img_path ?>facebook.png" /></a>
-
-
-<a href="http://www.myspace.com/abdelkareem" title="Free Kareem MySpace"><img src="<?php echo $img_path; ?>myspace.png" /></a>
-
-
-<a href="http://www.youtube.com/profile_favorites?user=freekareem" title="Free Kareem Youtube"><img src="<?php echo $img_path; ?>youtube.png" /></a>
-
-<a href="http://twitter.com/freekareem" title="Free Kareem Twitter"><img src="<?php echo $img_path; ?>twitter.png" /></a>
-<br />
 <!--
 <br />
 <form name="_xclick" action="https://www.paypal.com/cgi-bin/webscr" method="post">
