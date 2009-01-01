@@ -13,7 +13,7 @@ if(!is_secure($_POST)) { die("Hackers begone");}
 # the form is submitted
 
 // Email address for copies to be sent to - change to suit
-$emailto = "esra@sdfdsfsdf.com"; //email to esra if he wants
+$emailto = "free.kareem@gmail.com"; //email to esra if he wants
 
 // Notification email subject text for copies
 $esubject = "Promotion form submission"; 

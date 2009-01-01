@@ -4,7 +4,7 @@ Plugin Name: Free Kareem
 Plugin URI: http://semperfiwebdesign.com/plugins/free-kareem/
 Description: Help support free speech.  Fight the inprisonment of jailed blogger!
 Author: Michael Torbert
-Version: .4.5
+Version: .4.6
 Author URI: http://semperfiwebdesign.com/
 */
 
@@ -41,22 +41,23 @@ $img_path ='http://' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] . 'wp-con
 $plugin_path = 'http://' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] . 'wp-content/plugins/free-kareem/';
 ?>
 <br />
-<strong>ALERT!! Serious social and political injustice.  Please take action now.  A blogger exercising his freedom of speech has been imprisoned and needs YOUR help.</strong>
+<strong>ALERT!!</strong> A serious injustice was committed. Please take action now! Kareem Amer, an Egyptian blogger who was imprisoned for exercising his right to freedom of speech, is still in prison and needs YOUR help!<br />
+Find out more information by visiting <a href="http://freekareem.org" title="Kareem Amer">FreeKareem.org</a> or by networking with us:
 
 <br />
 <br />
 
-Find out more information by clicking on the links below!<br /><br />
 
-<a href="http://www.facebook.com/group.php?sid=ad4141412fa7b83f39672b4359fb5531&refurl=http%3A%2F%2Fwww.facebook.com%2Fs.php%3Finit%3Dq%26q%3Dfreekareem.org%26ref%3Dts%26sid%3Dad4141412fa7b83f39672b4359fb5531&gid=10271643891" title="Free Kareem Facebook"><img src="<?php echo $img_path ?>facebook.png" width="75px"/></a>
-
-
-<a href="http://www.myspace.com/abdelkareem" title="Free Kareem MySpace"><img src="<?php echo $img_path ?>myspace.png" width="75px"/></a>
+<a href="http://www.facebook.com/group.php?sid=ad4141412fa7b83f39672b4359fb5531&refurl=http%3A%2F%2Fwww.facebook.com%2Fs.php%3Finit%3Dq%26q%3Dfreekareem.org%26ref%3Dts%26sid%3Dad4141412fa7b83f39672b4359fb5531&gid=10271643891" title="Free Kareem Facebook"><img src="<?php echo $img_path ?>facebook.png" /></a>
 
 
-<a href="http://www.youtube.com/profile_favorites?user=freekareem" title="Free Kareem Youtube"><img src="<?php echo $img_path ?>youtube.png" width="75px"/></a>
+<a href="http://www.myspace.com/abdelkareem" title="Free Kareem MySpace"><img src="<?php echo $img_path ?>myspace.png" /></a>
+
+
+<a href="http://www.youtube.com/profile_favorites?user=freekareem" title="Free Kareem Youtube"><img src="<?php echo $img_path ?>youtube.png" /></a>
 
 <br />
+<!--
 <br />
 <form name="_xclick" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 						<input type="hidden" name="cmd" value="_xclick">
@@ -66,7 +67,7 @@ Find out more information by clicking on the links below!<br /><br />
 						<input type="hidden" name="amount" value="">
 						<input type="image" src="http://www.paypal.com/en_US/i/btn/x-click-butcc-donate.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
 					</form>
-
+-->
 <br />
 
 <a href="<?php echo $plugin_path?>reqform.php" target="page" onClick="window.open('','page','toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=550,height=480,left=50,top=50,titlebar=yes')"><img src="<?php echo $img_path ?>tellfriend.png" /></a>
