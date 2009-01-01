@@ -4,7 +4,7 @@ Plugin Name: Free Kareem
 Plugin URI: http://semperfiwebdesign.com/plugins/free-kareem/
 Description: Help support free speech.  Fight the inprisonment of jailed blogger!
 Author: Michael Torbert
-Version: .4.7
+Version: .4.8
 Author URI: http://semperfiwebdesign.com/
 */
 
@@ -46,6 +46,25 @@ Find out more information by visiting <a href="http://freekareem.org" title="Kar
 
 <br />
 <br />
+
+<?
+$start = "November 4, 2006";
+$now = strtotime ("now");
+$then = strtotime ("$start");
+$difference = $now - $then ;
+$num = $difference/86400;
+$days = intval($num);
+$num2 = ($num - $days)*24;
+$hours = intval($num2);
+$num3 = ($num2 - $hours)*60;
+$mins = intval($num3);
+$num4 = ($num3 - $mins)*60;
+$secs = intval($num4);
+?>
+<p>
+Kareem has been in prison for: &nbsp;
+<? echo $days ?> days.
+</p>
 
 
 <a href="http://www.facebook.com/group.php?sid=ad4141412fa7b83f39672b4359fb5531&refurl=http%3A%2F%2Fwww.facebook.com%2Fs.php%3Finit%3Dq%26q%3Dfreekareem.org%26ref%3Dts%26sid%3Dad4141412fa7b83f39672b4359fb5531&gid=10271643891" title="Free Kareem Facebook"><img src="<?php echo $img_path ?>facebook.png" /></a>
