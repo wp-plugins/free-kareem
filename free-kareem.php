@@ -4,7 +4,7 @@ Plugin Name: Free Kareem
 Plugin URI: http://semperfiwebdesign.com/plugins/free-kareem/
 Description: Help support free speech.  Fight the inprisonment of jailed blogger!
 Author: Michael Torbert
-Version: .5
+Version: .5.1
 Author URI: http://semperfiwebdesign.com/
 */
 
@@ -64,7 +64,7 @@ Find out more information by visiting <a href="http://freekareem.org" title="Kar
 <br />
 <br />
 <?
-$start = "November 4, 2006";
+$start = "November 6, 2006";
 $now = strtotime ("now");
 $then = strtotime ("$start");
 $difference = $now - $then ;
