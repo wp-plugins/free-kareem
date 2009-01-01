@@ -4,7 +4,7 @@ Plugin Name: Free Kareem
 Plugin URI: http://semperfiwebdesign.com/plugins/free-kareem/
 Description: Help support free speech.  Fight the inprisonment of jailed blogger!
 Author: Michael Torbert
-Version: .4.8
+Version: .4.9
 Author URI: http://semperfiwebdesign.com/
 */
 
@@ -29,6 +29,11 @@ require_once(ABSPATH."wp-content/plugins/free-kareem/options.php");
 require_once(ABSPATH."wp-content/plugins/free-kareem/database.php");
 require_once(ABSPATH."wp-content/plugins/free-kareem/functions.php");
 
+if ( ! defined( 'WP_CONTENT_URL' ) )
+define( 'WP_CONTENT_URL', get_option('url') . '/wp-content' );
+if ( ! defined( 'WP_PLUGIN_URL' ) )
+define( 'WP_PLUGIN_URL', WP_CONTENT_URL. '/plugins' );
+
 
 add_action("plugins_loaded", "mrt_kareem_widget_init");
 register_activation_hook(__FILE__,'mrt_kareem_install');
@@ -37,8 +42,8 @@ function mrt_kareem_guts_widget()
 {  ?>
 
 <?php
-$img_path ='http://' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] . 'wp-content/plugins/free-kareem/images/';
-$plugin_path = 'http://' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] . 'wp-content/plugins/free-kareem/';
+$img_path = WP_PLUGIN_URL . '/free-kareem/images/';
+$plugin_path = WP_PLUGIN_URL . '/free-kareem/';
 ?>
 <br />
 <strong>ALERT!!</strong> A serious injustice was committed. Please take action now! Kareem Amer, an Egyptian blogger who was imprisoned for exercising his right to freedom of speech, is still in prison and needs YOUR help!<br />

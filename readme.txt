@@ -5,7 +5,7 @@ https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=nYi5HJVq6fuOBRzbG7Ysl
 Tags: kareem, free speech
 Requires at least: 2.0
 Tested up to: 2.7
-Stable tag: .4.8
+Stable tag: .4.9
 
 ***All donations for this plugin go directly to the Free Kareem Coalition***
 
