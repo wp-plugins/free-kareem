@@ -2,9 +2,9 @@
 /*
 Plugin Name: Free Kareem
 Plugin URI: http://semperfiwebdesign.com/plugins/free-kareem/
-Description: Help support free speech.  Fight the inprisonment of jailed blogger!
+Description: Help support free speech.  Fight the inprisonment of jailed blogger! Visit the <a href="options-general.php?page=freekareemoptionspage">Settings Page</a> to control which elements of the widget to show.
 Author: Michael Torbert
-Version: .5.1
+Version: .5.3
 Author URI: http://semperfiwebdesign.com/
 */
 
@@ -28,82 +28,34 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 require_once(ABSPATH."wp-content/plugins/free-kareem/options.php");
 require_once(ABSPATH."wp-content/plugins/free-kareem/database.php");
 require_once(ABSPATH."wp-content/plugins/free-kareem/functions.php");
+require_once(ABSPATH."wp-content/plugins/free-kareem/kareem_widget.php");
+require_once(ABSPATH."wp-content/plugins/free-kareem/widget_conf.php");
+
+add_action('admin_menu', 'mrt_kareem_add_pages');
+
+setup_options();
+
+global $img_path;
+global $plugin_path;
 
 if ( ! defined( 'WP_CONTENT_URL' ) )
 define( 'WP_CONTENT_URL', get_option('url') . '/wp-content' );
 if ( ! defined( 'WP_PLUGIN_URL' ) )
 define( 'WP_PLUGIN_URL', WP_CONTENT_URL. '/plugins' );
 
+$img_path = WP_PLUGIN_URL . '/free-kareem/images/';
+$plugin_path = WP_PLUGIN_URL . '/free-kareem/';
+
+function mrt_kareem_add_pages(){
+	add_options_page('Free Kareem Widget Management', 'Free Kareem', 8, 'freekareemoptionspage', 'mrt_kareem_options_page');
+}
+
+
 
 add_action("plugins_loaded", "mrt_kareem_widget_init");
 register_activation_hook(__FILE__,'mrt_kareem_install');
 
-function mrt_kareem_guts_widget()
-{  ?>
 
-<?php
-$img_path = WP_PLUGIN_URL . '/free-kareem/images/';
-$plugin_path = WP_PLUGIN_URL . '/free-kareem/';
-?>
-<br />
-<strong>ALERT!!</strong> A serious injustice was committed. Please take action now! Kareem Amer, an Egyptian blogger who was imprisoned for exercising his right to freedom of speech, is still in prison and needs YOUR help!<br />
-Find out more information by visiting <a href="http://freekareem.org" title="Kareem Amer">FreeKareem.org</a> or by networking with us:
-
-<br />
-<br />
-
-<a href="http://www.facebook.com/group.php?sid=ad4141412fa7b83f39672b4359fb5531&refurl=http%3A%2F%2Fwww.facebook.com%2Fs.php%3Finit%3Dq%26q%3Dfreekareem.org%26ref%3Dts%26sid%3Dad4141412fa7b83f39672b4359fb5531&gid=10271643891" title="Free Kareem Facebook"><img src="<?php echo $img_path ?>facebook.png" /></a>
-
-
-<a href="http://www.myspace.com/abdelkareem" title="Free Kareem MySpace"><img src="<?php echo $img_path; ?>myspace.png" /></a>
-
-
-<a href="http://www.youtube.com/profile_favorites?user=freekareem" title="Free Kareem Youtube"><img src="<?php echo $img_path; ?>youtube.png" /></a>
-
-<a href="http://twitter.com/freekareem" title="Free Kareem Twitter"><img src="<?php echo $img_path; ?>twitter.png" /></a>
-<br />
-<br />
-<?
-$start = "November 6, 2006";
-$now = strtotime ("now");
-$then = strtotime ("$start");
-$difference = $now - $then ;
-$num = $difference/86400;
-$days = intval($num);
-$num2 = ($num - $days)*24;
-$hours = intval($num2);
-$num3 = ($num2 - $hours)*60;
-$mins = intval($num3);
-$num4 = ($num3 - $mins)*60;
-$secs = intval($num4);
-?>
-<p>
-Kareem has been in prison for: &nbsp;
-<? echo $days ?> days.
-</p>
-
-<!--
-<br />
-<form name="_xclick" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-						<input type="hidden" name="cmd" value="_xclick">
-						<input type="hidden" name="business" value="chrisk@freekareem.org">
-						<input type="hidden" name="item_name" value="Donate to Free Kareem">
-						<input type="hidden" name="currency_code" value="USD">
-						<input type="hidden" name="amount" value="">
-						<input type="image" src="http://www.paypal.com/en_US/i/btn/x-click-butcc-donate.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
-					</form>
--->
-<br />
-
-<a href="<?php echo $plugin_path?>reqform.php" target="page" onClick="window.open('','page','toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=550,height=480,left=50,top=50,titlebar=yes')"><img src="<?php echo $img_path ?>tellfriend.png" /></a>
-
-<br />					
-
-<a href="http://wordpress.org/extend/plugins/free-kareem/" title="Free Kareem Plugin">Download</a> this plugin!
-
-<form name='mrt_sub_form' id='mrt_sub_form' method='POST' action='<?= "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'] . "?" . $_SERVER['QUERY_STRING'] ?>'>
-</form>
-<?php }
 
 
 //add_action('admin_menu', 'mrt_kareem_add_menu');
