@@ -5,26 +5,29 @@ https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=nYi5HJVq6fuOBRzbG7Ysl
 Tags: kareem, free speech
 Requires at least: 2.0
 Tested up to: 2.7
-Stable tag: .5.2
-
-***All donations for this plugin go directly to the Free Kareem Coalition***
-
-Kareem Amer is an Egyptian blogger who is being wrongfully imprisoned and tortured by the Egyptian government for exercising free speech in blogs, which criticized certain aspects of corruption in the Muslim clergy and in the Egyptian government. The Free Kareem Coalition, a non-profit team of free speech advocates, primarily made up of Muslims, sponsored the creation of this plugin to provide awarenes for the cause. It allows the display of a widget promoting the group and creating awareness of the situation.
-
-FreeKareem.org is working with people around the world to secure Kareem Amer's immediate and unconditional release.
-
-== Description ==
+Stable tag: .5.3
 
 Kareem Amer is an Egyptian blogger who is being wrongfully imprisoned and
 tortured by the Egyptian government for exercising free speech in blogs, which
 criticized certain aspects of corruption in the Muslim clergy and in the
-Egyptian government.  A non-profit organization (made up of Muslims, whom are
-the very ones Kareem criticized, although they support his right to do so) and
-free speech advocates, freekareem.org is working with others to secure his
-release.  Several United States senators have also petitioned for his release.  
-This plugin was created to provide awareness for the cause.  It allows the
-display of a widget promoting the group and creating awareness of the
-situation.
+Egyptian government. The Free Kareem Coalition, a non-profit team of free
+speech advocates, primarily made up of Muslims, sponsored the creation of this
+plugin to provide awarenes for the cause. It allows the display of a widget
+promoting the group and creating awareness of the situation.
+
+== Description ==
+
+
+***All donations for this plugin go directly to the Free Kareem Coalition***
+
+Kareem Amer is an Egyptian blogger who is being wrongfully imprisoned and
+tortured by the Egyptian government for exercising free speech in blogs, which
+criticized certain aspects of corruption in the Muslim clergy and in the
+Egyptian government. The Free Kareem Coalition, a non-profit team of free
+speech advocates, primarily made up of Muslims, sponsored the creation of this
+plugin to provide awarenes for the cause. It allows the display of a widget
+promoting the group and creating awareness of the situation.
+
 
 **Features**<br />
 -includes built-in widget<br />
