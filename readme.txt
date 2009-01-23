@@ -5,7 +5,7 @@ https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=nYi5HJVq6fuOBRzbG7Ysl
 Tags: kareem, free speech
 Requires at least: 2.0
 Tested up to: 2.7
-Stable tag: .5.4
+Stable tag: .5.5
 
 Kareem Amer is an Egyptian blogger who is being wrongfully imprisoned and
 tortured by the Egyptian government for exercising free speech in blogs, which
