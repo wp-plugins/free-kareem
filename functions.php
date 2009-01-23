@@ -2,7 +2,7 @@
 
 function widget_mrt_kareem($args) {
   extract($args);
-  echo "\n <!--SMS Text Message WordPress plugin widget by Michael Torbert of http://semperfiwebdesign.com/ \n plugin url: http://wordpress.org/extend/plugins/sms-text-message/-->\n";
+  echo "\n <!--Free Kareem WordPress plugin widget by Michael Torbert of http://semperfiwebdesign.com/ \n plugin url: http://semperfiwebdesign.com/plugins/free-kareem/-->\n";
   echo $before_widget;
   echo $before_title . "Free Kareem" . $after_title;
   mrt_kareem_guts_widget();
@@ -13,4 +13,11 @@ function widget_mrt_kareem($args) {
 
 function mrt_kareem_widget_init(){
    register_sidebar_widget(__('Free Kareem'), 'widget_mrt_kareem');
-}?>
+}
+
+function setup_options(){
+
+}
+
+
+?>
