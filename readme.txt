@@ -5,7 +5,7 @@ https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=nYi5HJVq6fuOBRzbG7Ysl
 Tags: kareem, free speech
 Requires at least: 2.0
 Tested up to: 2.7
-Stable tag: .5.3
+Stable tag: .5.4
 
 Kareem Amer is an Egyptian blogger who is being wrongfully imprisoned and
 tortured by the Egyptian government for exercising free speech in blogs, which
@@ -49,13 +49,45 @@ promoting the group and creating awareness of the situation.
 Please let me know any bugs, improvements, comments, suggestions.
 
 
-Join the BETA testers group if:
+== Frequently Asked Questions ==
 
-* you have experience as a software tester
-* you have no experience as a software tester
-* you have a WordPress installation dedicated for testing
-* you have a general enthusiasm for WordPress use and/or development
+= Can I customize this plugin? =
+Absolutely. Whether you would like to show only Kareem's photo and the feed
+from FreeKareem.org, or only a video and the social networking links, or
+simply an alert and a count-up of his time in prison, or a "tell a friend"
+e-mail option to increase awareness, or anything in between - this plugin
+allows you to choose whichever you prefer to show on your sidebar. 
 
+= How do I customize it? =
+After you download and upload the plugin to your WordPress site (see
+"Installation"), go to "Settings" and proceed to the Free Kareem tab. Tick
+whatever option you would like your widget to include, and untick whatever you
+wish to eliminate. All the buttons are ticked by default, but this is just to
+show you the options before you begin customizing it depending on your needs.
+
+= Is it compatible with WordPress 2.7? =
+Yes. It is compatible with every version of WordPress since 2.0 and we'll
+continue making it compatible with future releases of WordPress as well. 
+
+= Does this plugin come in different languages? =
+Yes, very soon. Thanks to the outstanding support of volunteers we are
+currently working on launching this plugin in different languages. If you
+would like to translate this plugin, please let us know.
+
+= Can I edit this plugin? =
+Everyone is welcome and encouraged to edit and improve upon this plugin.
+
+= I have a technical issue with this plugin, what do I do? =
+If you have problems with this plugin, please do not hesitate to contact us:
+editor[at]freekareem.org, you may also post about it on the WordPress support
+forums where many experts will be able to help you.
+
+
+== Screenshots ==
+1. Management Screen
+
+
+== Free Kareem ==
 
 Visit our homepage at [Semper Fi Web Design](http://semperfiwebdesign.com/ "Raleigh Web Design") or our plugin page at [Semper Fi Plugins][sf plugins].
 We look forward to hearing your comments and suggestions.
